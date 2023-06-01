@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" 
+        content="#a0ffec" 
+        media="(prefers-color-scheme: light)">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link href="style.css" rel="stylesheet">
+        <title>BhnIIxVoth000</title>
+        <style>
+            #top, #bottom, #left, #right {
+                background: #FB81E4;
+                }
+                #left, #right {
+                    position: fixed;
+                    top: 0; bottom: 0;
+                    width: 1px;
+                    }
+                    #left { left: 0; }
+                    #right { right: 0; }
+                    
+                #top, #bottom {
+                    position: fixed;
+                    left: 0; right: 0;
+                    height: 1px;
+                    }
+                    #top { top: 0; }
+                    #bottom { bottom: 0; }
+                    
+            @media 
+            
+            /* Fairly small screens including iphones */
+            only screen and (max-width: 500px),
+            
+            /* iPads */
+            only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+            
+            {
+                #top, #bottom, #left, #right { display: none; }
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+<body>
+    <div class="a1" id="first">
+    <h2> Burnout & Sowing the flowers</h2>
+    <button onclick="showAlert()">The meaning behind</button>
+    <div id="switch">
+        <h4>Hide the UI</h4>
+    <label class="switch"> 
+        <input type="checkbox" id="toggleButton">
+        <span class="slider"></span>
+      </label>
+    </div>
+</div>
+
+<div class="a2" id="gui">
+    <div class="pcss" id="p1"> 
+        <h5>Having a burnout? Choose one</h5>
+        <div id="gap1">
+<button id="button1">You I</button> 
+<button id="button2">You II</button> 
+</div>
+</div>
+
+<div  class="pcss" id="p2"> 
+    <h5></h5>
+    <div id="gap">
+    <input type="color" id="colorPicker" value="#0091ff">
+    <input type="color" id="colorPicker2" value="#ff00ea">
+    </div>
+</div>
+
+<div  class="pcss" id="p3">
+    <h5></h5>
+    <div id="gap">
+<input type="color" id="colorPicker4" value="#ffffff">
+<input type="color" id="colorPicker3" value="#fbff00">
+</div>
+</div>
+
+<div  class="pcss" id="p4">
+<h5></h5>
+<input type="color" id="colorPicker5" value="#0091ff">
+<button id="generateButton" onclick="generateScribble()">Generate your mood</button>
+</div>
+
+<div  class="pcss" id="p5">
+<h5></h5>
+<form id="textForm">
+    <label for="textInput">What are you thinking? </label>
+    <textarea id="textInput" name="textInput">....</textarea>
+    
+    <button type="submit">Add your thoughts</button>
+  </form>
+<span>Visualising with your mind's eyes </span>
+<input type="color" id="colorPicker1" value="#11ff00"> 
+
+<div class="range-container"> 
+    <label for="opacityRange"></label>
+<input type="range" min="0.1" max="0.5" step="0.1" value="0.3" id="opacityRange">    
+<label for="sizeRange"></label>
+<input type="range" min="10" max="25" value="20" id="sizeRange">
+
+</div>
+</div>
+
+<button id="refreshButton">Refresh</button>
+</div>
+
+<div class="a3" id="shot">
+      <div id="gth">
+<span>An interactive project created by @Voth000 for @bapxao.oi ¶ BHN2 exhibition</span>
+      </div>
+      <div id="social">
+        <h5>Contact Us</h5>
+        <button onclick="window.open('https://www.instagram.com/voth000/','vothDm');">@voth000</button>
+        <button onclick=onclick="window.open('https://www.instagram.com/bapxao.oi/','Bx');">@bapxao.oi</button>
+    </div>
+</div>
+
+<div  class="poster">
+    <div class="container">
+        <div class="draggable" style="right: 40%; top: 12%;">
+          <img id="img1" src="./f.png">
+        </div>
+        <div class="draggable" style="left: 42%; bottom: 10%; ">
+          <img id="img2" src="./1.png">
+        </div>
+        <div class="draggable" style="left: 42%; bottom: 10%; ">
+          <img id="img2" src="./h.png">
+        </div>
+        <div class="draggable" style="left: 42%; bottom: 10%; ">
+          <img id="img2" src="./h1.png">
+        </div>
+        <div class="draggable" style="left: 20%; bottom: 30%;">
+          <img id="img1" src="./l.png">
+        </div>
+      </div>
+      <div id="three-container"></div>
+<canvas id="background"></canvas>
+<div id="alertContainer"></div>
+<canvas id="scribbleCanvas"></canvas>
+</div>
+
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+        <script type="importmap">
+          {
+            "imports": {
+              "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+              "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"
+            }
+          }
+        </script>
+<script src="index.js" type="module"></script>
+<script src="./main.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/noisejs@2.1.0/index.min.js
+"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+<div id="pop">
+     <!-- Overlay and Pop-up box -->
+  <div id="overlay" class="overlay" onclick="hideAlert()"></div>
+  <div id="popup" class="popup">
+    <h3>"May you discover mindfulness and cultivate patience within"</h3>
+    <h5>What is burnout?</h5>
+    <span >Burnout itself is not a deliberate or beneficial phase for personal growth or your higher self. 
+        Burnout is a state of exhaustion and imbalance caused by prolonged stress or overwork. 
+        It can have negative effects on your physical health, mental well-being, and overall quality of life.
+    </span>
+        <h5>Sowing the seeds</h5>
+        <span>
+            However, the recovery process from burnout can indeed lead to positive transformation and a greater sense of happiness and well-being. 
+        When you recognize the signs of burnout and take steps to address it, such as practicing self-care, 
+        setting boundaries, and seeking support, you can start to restore balance and prioritize your well-being.
+        </span>
+        <h5>Growing the flowers</h5>
+        <span>
+            During the recovery phase, you may engage in activities that promote self-reflection, self-discovery, and personal growth. 
+            This can include exploring new interests, reevaluating priorities, and making changes in your lifestyle or career to align with your values and needs. 
+            By nurturing yourself and implementing healthy habits, you create a foundation for personal development and a more fulfilling life.
+        </span>
+        <h5>End Note</h5>
+        <p style="font-size: 10px; text-align:right; ">
+            Click outside the box to close.
+        </p>
+       
+        
+    </p>
+  </div>
+</div>
+<div id="up" class="up">
+    <div class="up-content">
+      <h2>Welcome!!!</h2>
+      <p>Please click on the model behind this popup to continue.</p>
+    </div>
+  </div>
+</body>
+</html>
