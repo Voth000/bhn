@@ -436,10 +436,10 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 #shot {
-  box-shadow: rgba(38, 165, 255, 0.196) 2px 2px 1px 0px;
+  
 
   max-width: 30%;
-  border: #fbceff3b 1px solid;
+
     grid-template-columns: auto auto;
     
     display: grid;
@@ -447,7 +447,7 @@ input[type="color"]::-webkit-color-swatch {
     color: rgb(0, 0, 0);
     padding: 0.75em;
     border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.868);
+   
     justify-content: center;
   bottom: 0;
   justify-content: end;
@@ -587,7 +587,7 @@ border-radius: 2px;
   max-width: 10%;
   position: absolute;
   z-index: 6;
-  padding: 1em;
+  padding: 0.75em;
   display: grid;
   grid-gap: 8px;
 }
@@ -630,4 +630,8 @@ text-align: left;
 
 .up-content p {
   margin-bottom: 0;
+}
+
+#social h5 {
+  margin: 4px !important;
 }
