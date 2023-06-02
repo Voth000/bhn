@@ -377,7 +377,14 @@ label, span {
 color: rgb(0, 0, 0);
 }
 
+label {
+  font-weight: 900;
+}
 
+#p1.pcss h5 {
+  font-size: 12px;
+  word-break: break-all;
+}
 
 #gui {
   justify-content: flex-end;
