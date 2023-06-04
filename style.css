@@ -38,7 +38,6 @@ form {
     border-radius: 2px;
     resize: none;
     overflow: hidden;
-    width: 90%;
     height: 80px;
     color: #063fc5;
   }
@@ -117,21 +116,32 @@ form {
     border-radius: 2px;
     box-shadow: 4px 4px 4px 0px rgb(0, 17, 251);
   }
+
   #p4.pcss button:active {
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.272);
+    box-shadow:  2px 2px 0px 0px rgba(0, 0, 0, 0.272);
     top: 5px;
   }
+
+  
+  #p4.pcss button:hover {
+    border: 1px solid rgb(0, 17, 251);
+  }
+ 
 
   #p5.pcss button {
     height: 60px;
     border-radius: 2px;
     box-shadow: 4px 4px 4px 0px rgb(0, 17, 251);
   }
+
   #p5.pcss button:active {
     box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.272);
     top: 5px;
   }
-
+  #p5.pcss button:hover {
+    border: 1px solid rgb(0, 17, 251);
+  }
+ 
   button:after {
     width: 0;
   height: 100%;
@@ -269,7 +279,7 @@ form {
 
 .range-container {
 height: auto;
-width: 40px; /* Adjust the width as needed */
+width: 100%; /* Adjust the width as needed */
 
 
 }
@@ -289,7 +299,7 @@ input[type=range] {
   -webkit-appearance: none;
   margin: 0px 0;
   border-radius: 2px;
-
+  width: 100%;
 }
 input[type=range]:focus {
   outline: none;
@@ -347,6 +357,13 @@ max-width: 20%;
 
   background-color: rgba(255, 255, 255, 0.868);
 }
+
+.pcss:hover {
+  border: #0004f6b1 1px solid;
+  background-color: #0004f650 2px 2px 2px 0px;
+ 
+}
+
 #p1.pcss {
   grid-gap: 8px;
   grid-template-columns: unset;
@@ -365,7 +382,6 @@ max-width: 20%;
 }
 
 #textForm {
-  width: 90%;
 height: 100%;
   display: grid;
   grid-gap: 8px
@@ -373,7 +389,6 @@ height: 100%;
 
 label, span {
   font-size: 12px;
-  width: 100%;
 color: rgb(0, 0, 0);
 }
 
@@ -418,6 +433,18 @@ input[type=color]{
   outline: none;
 	background: none;
 }
+
+input[type=color]:hover {
+cursor: pointer;
+/*change color of the swatch border here*/
+border: solid 3px rgba(255, 16, 155, 0.3); 
+  border-radius: 4px;
+  padding: 0;
+  box-shadow: 1px 1px 3px 0px rgb(255, 9, 34);
+  border: none;
+  outline: none;
+}
+
 input[type="color"]::-webkit-color-swatch-wrapper {
 	padding: 0;
   border: solid 3px rgba(95, 144, 242, 0.3); /*change color of the swatch border here*/
@@ -477,6 +504,11 @@ input[type="color"]::-webkit-color-swatch {
   opacity: 0;
   width: 0;
   height: 0;
+}
+
+.switch, h4 {
+  padding: 0;
+  margin: 0px;
 }
 
 .slider {
@@ -582,7 +614,7 @@ font-size: 14px;
 
 #first {
   border: 1px solid rgba(247, 246, 255, 0.23);
-margin: 12px;
+  margin: 0px 0px 0px 12px;
    
     background-blend-mode: luminosity;
   
@@ -591,7 +623,7 @@ margin: 12px;
     color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.867);
 border-radius: 2px;
-  max-width: 10%;
+  width: 8%;
   position: absolute;
   z-index: 6;
   padding: 0.75em;
@@ -609,7 +641,7 @@ border-radius: 2px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(4, 4, 4, 0.682);
+  background-color: rgba(255, 255, 255, 0.622);
   display: flex;
   justify-content: center;
   align-items: center;
