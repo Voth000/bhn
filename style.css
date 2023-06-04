@@ -123,9 +123,7 @@ form {
   }
 
   
-  #p4.pcss button:hover {
-    border: 1px solid rgb(0, 17, 251);
-  }
+
  
 
   #p5.pcss button {
@@ -138,9 +136,7 @@ form {
     box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.272);
     top: 5px;
   }
-  #p5.pcss button:hover {
-    border: 1px solid rgb(0, 17, 251);
-  }
+  
  
   button:after {
     width: 0;
@@ -154,7 +150,7 @@ form {
    -4px -4px 5px 0px #fff9,
    7px 7px 20px 0px rgba(255, 255, 255, 0.926),
    4px 4px 5px 0px rgba(255, 255, 255, 0.773);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 
   }
 
