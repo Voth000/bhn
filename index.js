@@ -155,7 +155,7 @@ document.getElementById("button1").addEventListener("click", function(){
    tim.traverse(function (node) {
        if (node.isMesh) {
          node.material.shininess = 0;
- node.scale.set(0.13, 0.13, 0.13);
+ node.scale.set(0.11, 0.11, 0.11);
 
  const material = node.material;
  material.emissive = emissiveColor; // set the emissive color to white
@@ -299,7 +299,7 @@ document.getElementById("button1").addEventListener("click", function(){
           node.position.set(0, 0, -3);
           
   const material = node.material;
-  material.opacity = 0.4; 
+  material.opacity = 0.5; 
   material.emissive = emissiveColor1;
   
    // set the emissive color to white
