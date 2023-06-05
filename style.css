@@ -29,20 +29,22 @@ form {
 
   
   textarea#textInput {
-    font-size: 16px;
+    font-size: 14px;
     border: 1px solid rgba(201, 200, 200, 0.819);
     border-radius: 2px;
     resize: none;
     overflow: hidden;
     height: 80px;
-    color: #063fc5;
+    color: #063fc56f;
   }
 
 
   textarea#textInput:hover {
     border: 1px solid rgb(148, 157, 245);
+    color: #063fc5;
 
   }
+ 
 
 
   #refreshButton {
