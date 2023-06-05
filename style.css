@@ -22,10 +22,6 @@ body {
   height: 100%;
 }
 
-
-
-
-
 form {
     color: rgb(0, 0, 0);
   }
@@ -686,4 +682,30 @@ text-align: left;
 
 #social h5 {
   margin: 4px !important;
+}
+
+@media (max-width: 900px) {
+  #first {
+    align-items: start;
+    grid-template-columns: auto auto auto;
+    width: 20%;
+    margin: 0px;
+  }
+  #first h2 {
+    font-size: 12px;
+  }
+  #first button {
+    max-height: 44px;
+    font-size: 12px;
+  }
+  #shot {
+    padding: 0px;
+
+    max-width: 100%;
+    grid-gap: 4px;
+  }
+  #shot span {
+    font-size: 10px;
+    padding: 8px;
+  }
 }
