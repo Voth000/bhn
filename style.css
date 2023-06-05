@@ -42,6 +42,13 @@ form {
     color: #063fc5;
   }
 
+
+  textarea#textInput:hover {
+    border: 1px solid rgb(148, 157, 245);
+
+  }
+
+
   #refreshButton {
     background-color: #0004f6b1;
     color: #ffffff;
@@ -137,7 +144,12 @@ form {
     top: 5px;
   }
   
- 
+  textarea:disabled {
+    background-color: #e6e6e6de;
+    border: unset !important;
+    color: #d5d5d53c !important;
+  }
+
   button:after {
     width: 0;
   height: 100%;
@@ -344,7 +356,7 @@ h5 {
 
 .pcss {
 max-width: 20%;
-  border: #8d89ff3b 1px solid;
+  border: #89a1ff3b 1px solid;
   grid-template-columns: auto auto;
  
   display: grid;
@@ -354,19 +366,14 @@ max-width: 20%;
   border-radius: 2px;
 
   justify-content: center;
-  box-shadow: rgba(38, 165, 255, 0.196) 2px 2px 1px 0px;
-
-
-  
+  box-shadow: #89a1ff3b 2px 2px 2px 0px;
   color: rgb(0, 0, 0);
-
   background-color: rgba(255, 255, 255, 0.868);
 }
 
 .pcss:hover {
-  border: #0004f6b1 1px solid;
-  background-color: #0004f650 2px 2px 2px 0px;
- 
+  background-color: #d6f0fce4;
+  border: #8d89ff00 1px solid;
 }
 
 #p1.pcss {
@@ -442,18 +449,18 @@ input[type=color]{
 input[type=color]:hover {
 cursor: pointer;
 /*change color of the swatch border here*/
-border: solid 3px rgba(255, 16, 155, 0.3); 
+border: solid 3px rgba(64, 16, 255, 0.3); 
   border-radius: 4px;
   padding: 0;
-  box-shadow: 1px 1px 3px 0px rgb(255, 9, 34);
+  box-shadow: 1px 1px 3px 0px rgb(9, 152, 255);
   border: none;
   outline: none;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
 	padding: 0;
-  border: solid 3px rgba(95, 144, 242, 0.3); /*change color of the swatch border here*/
-  box-shadow: 1px 1px 3px 0px rgb(144, 157, 238);
+  border: solid 3px rgb(255, 255, 255); /*change color of the swatch border here*/
+  box-shadow: 1px 1px 2px 0px rgb(112, 159, 254);
 	border-radius: 4px;
 }
 input[type="color"]::-webkit-color-swatch {
