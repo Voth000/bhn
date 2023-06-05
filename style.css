@@ -33,7 +33,7 @@ form {
 
   
   textarea#textInput {
-    font-size: 12px;
+    font-size: 16px;
     border: 1px solid rgba(201, 200, 200, 0.819);
     border-radius: 2px;
     resize: none;
@@ -519,6 +519,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .switch, h4 {
+  font-size: 12px;
   padding: 0;
   margin: 0px;
 }

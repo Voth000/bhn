@@ -128,7 +128,7 @@ function updateEmissiveColor1() {
   // Load the first GLTF model (tim.glb)
  // Load the first GLTF model (tim.glb)
  const loader = new GLTFLoader();
- loader.load('ani.glb', function (gltf) {
+ loader.load('ani2.glb', function (gltf) {
    tim = gltf.scene;
    scene.add(tim);
 // Set up the animations
@@ -303,7 +303,7 @@ document.getElementById("button1").addEventListener("click", function(){
   material.emissive = emissiveColor1;
   
    // set the emissive color to white
-  material.emissiveIntensity = 0.9; // adj
+  material.emissiveIntensity = 1; // adj
         }
       });
   });
