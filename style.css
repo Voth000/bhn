@@ -496,7 +496,7 @@ input[type="color"]::-webkit-color-swatch {
   display: grid;
   grid-gap: 16px;
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   left: 0;
   padding: 12px;
 }
@@ -728,9 +728,7 @@ button {
   font-size: 10px;
   max-height: 44px;
 }
-#p5.pcss {
-  grid-gap: 8px;
-}
+
 #refreshButton {
   font-size: 10px;
 }
@@ -762,7 +760,7 @@ button {
     right: 0;
     display: grid;
     width: unset;
-    grid-template-columns: 18% 16%;
+    grid-template-columns: 80px 60px;
   }
 
   #p1.css {
