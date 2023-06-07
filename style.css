@@ -39,20 +39,17 @@ form {
     resize: none;
     overflow: hidden;
     height: 80px;
-    color: #063fc56f;
+    color: rgba(97, 166, 210, 0.59);
   }
 
 
   textarea#textInput:hover {
     border: 1px solid rgb(148, 157, 245);
-    color: #063fc5;
-
+    color: rgb(0 156 255);
   }
- 
-
-
+  
   #refreshButton {
-    background-color: #0004f6b1;
+    background-color: rgb(0 144 251);
     color: #ffffff;
     position: relative;
     z-index: 4;
@@ -98,8 +95,9 @@ form {
 
 
   button {
+
     font-family:  monospace;
-    outline: #bdc2f3ae 1px solid;
+    outline: #bdd9f3ae 1px solid;
     border-radius: 2px;
     border: none;
     color: rgb(0, 0, 0);
@@ -110,7 +108,7 @@ form {
     align-items: center;
     position: relative;
     background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 1px 0px rgba(178, 178, 252, 0.222);
+    box-shadow: 2px 2px 1px 0px rgba(38, 165, 255, 0.196);
 
     grid-gap: 8px;
     display: flex;
@@ -123,7 +121,7 @@ form {
   #p4.pcss button {
     height: 60px;
     border-radius: 2px;
-    box-shadow: 4px 4px 4px 0px rgb(0, 17, 251);
+    box-shadow: 4px 4px 3px 0px rgb(0 144 251);
   }
 
   #p4.pcss button:active {
@@ -138,7 +136,7 @@ form {
   #p5.pcss button {
     height: 60px;
     border-radius: 2px;
-    box-shadow: 4px 4px 4px 0px rgb(0, 17, 251);
+    box-shadow: 4px 4px 3px 0px rgb(0 144 251);
   }
 
   #p5.pcss button:active {
@@ -169,7 +167,7 @@ form {
   }
 
   button:hover {
-    outline: #1429ea5b 1px solid;
+    outline: rgba(0, 157, 255, 0.813) 1px solid;
 
     color: #ff0000;
     background-color: #ffffff;
@@ -330,16 +328,16 @@ input[type=range]::-webkit-slider-runnable-track {
   animate: 0.2s;
   background: #ffffffb3;
   border-radius: 2px;
-  border: 2px solid #0040ff7a;
+  border: 2px solid rgba(0, 142, 251, 0.51);
   box-shadow: 1px 1px 3px 0px rgba(195, 191, 241, 0.471);
 
 }
 input[type=range]::-webkit-slider-thumb {
-  border: 2px solid #2e61faed;
+  border: 2px solid rgb(0 144 251);
   border-radius: 2px;
   height: 18px;
   width: 18px;
-  background: #2e61faed;
+  background: rgb(0 144 251);
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -8px;
@@ -524,10 +522,11 @@ input[type="color"]::-webkit-color-swatch {
   font-size: 12px;
   padding: 0;
   margin: 0px;
-  color: #6180d2;
+  color: rgb(0 156 255);
 }
 
 .slider {
+  box-shadow: 0.5px 0.5px 3px 0px rgba(112, 159, 254, 0.768);
   position: absolute;
   top: 0;
   left: 0;
@@ -569,7 +568,10 @@ button#bhn {
   align-items: center;
   grid-gap: 8px;
 }
-
+#social button {
+  color: rgb(0 0 0 / 40%);
+ 
+}
 .popup {
   
   
@@ -625,7 +627,14 @@ font-size: 14px;
 #gth{
   align-items: center;
   display: grid;
-  grid-gap: 16px
+  grid-gap: 16px;
+}
+
+#gth span {
+  color: rgb(164 203 229);
+}
+#social h5 {
+  color: rgb(164 203 229);
 }
 
 #first {
