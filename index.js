@@ -161,7 +161,7 @@ document.getElementById("button1").addEventListener("click", function(){
  material.emissive = emissiveColor; // set the emissive color to white
  material.emissiveIntensity = 0.9; // adj
  node.material.transparent = true;
-     node.material.opacity = 0.7; 
+     node.material.opacity = 0.85; 
        }
      });
    // Set the position of the model
