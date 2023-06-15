@@ -1,20 +1,27 @@
 ///
 
-
-
-gsap.from(".a1", {
+gsap.from(".a4", {
   opacity: 1, 
-x: -800,
-  duration: 3,
-  delay: 4,
+x: -200,
+  duration: 2,
+  delay: 0,
 });
 
 gsap.from(".a2", {
   opacity: 1, 
-y: -800,
-  duration: 6,
+y: -1200,
+  duration: 14,
   delay: 0,
 });
+
+gsap.from(".a1", {
+  opacity: 1, 
+x: -800,
+  duration: 8,
+  delay: 8,
+});
+
+
 
 /////
 
