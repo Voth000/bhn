@@ -1,5 +1,20 @@
+///
 
 
+
+gsap.from(".a1", {
+  opacity: 1, 
+x: -800,
+  duration: 3,
+  delay: 4,
+});
+
+gsap.from(".a2", {
+  opacity: 1, 
+y: -800,
+  duration: 6,
+  delay: 0,
+});
 
 /////
 
