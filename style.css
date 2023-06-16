@@ -345,6 +345,7 @@ width: 100%; /* Adjust the width as needed */
   writing-mode: bt-lr;
 
 }
+
 input[type=range] {
   height: 32px;
   -webkit-appearance: none;
@@ -876,6 +877,11 @@ button {
 }
 
 @media (max-width: 500px) {
+
+  .range-container input[type="range"] {
+    padding-top: 4px;
+  }
+  
   .a4 span {
     line-height: 12px;
    width: 20%;
